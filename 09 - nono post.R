@@ -5,8 +5,8 @@ library(ggtext)
 library(ggrepel)
 library(readxl)
 
-# #font_add_google('Montserrat', family = 'Montserrat')
-# showtext_auto()
+font_add_google('Montserrat', family = 'Montserrat')
+showtext_auto()
 
 data <- read_excel("PC vs tv.xlsx")
 data$Zona = factor(data$Zona, levels = c('Nord Est','Nord Ovest','Centro','Isole','Sud'), ordered = T)
